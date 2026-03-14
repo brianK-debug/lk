@@ -79,50 +79,50 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-[#f5f1e8] dark:from-background dark:via-background dark:to-[#1a1a1a]" />
         
         {/* Decorative elements */}
-        <div className="absolute top-16 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-16 right-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl" />
+        <div className="absolute top-24 left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-24 right-20 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-80px)]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[calc(100vh-80px)]">
             {/* Left Content */}
             <div
               className={`transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
               }`}
             >
-              <h1 className="font-serif text-5xl md:text-6xl font-bold text-foreground mb-3 leading-tight">
+              <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight">
                 Sustainable Growth for Africa's Future
               </h1>
 
-              <p className="text-lg text-foreground/70 mb-4 max-w-lg leading-relaxed">
+              <p className="text-xl md:text-2xl text-foreground/70 mb-8 max-w-xl leading-relaxed">
                 We integrate agribusiness and renewable energy to create lasting impact. Empowering farmers, transforming communities, and building a sustainable future.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row gap-6 mb-8">
                 <Link
                   href="/business-areas"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-colors group"
+                  className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-xl text-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-colors group"
                 >
                   Explore Our Work
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center px-8 py-3 rounded-lg border-2 border-primary text-primary font-semibold hover:bg-primary/5 transition-colors"
+                  className="inline-flex items-center justify-center px-10 py-5 rounded-xl text-lg border-2 border-primary text-primary font-semibold hover:bg-primary/5 transition-colors"
                 >
                   Get In Touch
                 </Link>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 gap-6 pt-4 border-t border-border">
+              <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
                 {[
                   { number: '500+', label: 'Farmers Supported' },
                   { number: '50K', label: 'Acres Managed' },
                 ].map((stat, i) => (
                   <div key={i}>
-                    <div className="text-3xl font-bold text-primary">{stat.number}</div>
-                    <div className="text-sm text-foreground/60">{stat.label}</div>
+                    <div className="text-5xl font-bold text-primary">{stat.number}</div>
+                    <div className="text-base text-foreground/60">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -134,7 +134,7 @@ export function HeroSection() {
                 isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
               }`}
             >
-              <div className="relative h-96 rounded-2xl overflow-hidden">
+              <div className="relative h-[500px] lg:h-[600px] rounded-2xl overflow-hidden">
                 <OptimizedImage
                   src="/hero-farmer.jpg"
                   alt="Farmer in agricultural field"
@@ -145,19 +145,19 @@ export function HeroSection() {
 
               {/* Floating cards */}
               <div
-                className="absolute -bottom-4 -left-4 p-4 bg-white dark:bg-card rounded-xl shadow-xl border border-border max-w-xs animate-bounce"
+                className="absolute -bottom-6 -left-6 p-6 bg-white dark:bg-card rounded-xl shadow-xl border border-border max-w-sm animate-bounce"
                 style={{ animationDelay: '0s' }}
               >
-                <p className="text-sm font-semibold text-foreground mb-1">Renewable Energy</p>
-                <p className="text-xs text-foreground/60">Solar & wind power solutions</p>
+                <p className="text-base font-semibold text-foreground mb-2">Renewable Energy</p>
+                <p className="text-sm text-foreground/60">Solar & wind power solutions</p>
               </div>
 
               <div
-                className="absolute top-12 -right-4 p-4 bg-white dark:bg-card rounded-xl shadow-xl border border-border max-w-xs animate-bounce"
+                className="absolute top-16 -right-6 p-6 bg-white dark:bg-card rounded-xl shadow-xl border border-border max-w-sm animate-bounce"
                 style={{ animationDelay: '0.2s' }}
               >
-                <p className="text-sm font-semibold text-foreground mb-1">Sustainable Farming</p>
-                <p className="text-xs text-foreground/60">Modern agricultural practices</p>
+                <p className="text-base font-semibold text-foreground mb-2">Sustainable Farming</p>
+                <p className="text-sm text-foreground/60">Modern agricultural practices</p>
               </div>
             </div>
           </div>
