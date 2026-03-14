@@ -67,8 +67,8 @@ export function ImpactCounters() {
   };
 
   return (
-    <section ref={containerRef} className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={containerRef} className="py-32 bg-background">
+      <div className="w-full mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
             Our Impact

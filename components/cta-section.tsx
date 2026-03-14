@@ -6,8 +6,8 @@ import { ArrowRight } from 'lucide-react';
 
 export function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary via-primary/90 to-primary dark:from-primary/20 dark:via-primary/15 dark:to-secondary/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-32 bg-gradient-to-br from-primary via-primary/90 to-primary dark:from-primary/20 dark:via-primary/15 dark:to-secondary/20">
+      <div className="w-full mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-white dark:text-foreground mb-4">
             Ready to Make an Impact?

@@ -50,18 +50,18 @@ export function BusinessAreasCards() {
   ];
 
   return (
-    <section className="py-20 bg-white dark:bg-background">
+    <section className="py-32 bg-white dark:bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-20">
+          <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
             What We Do
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-foreground/70 max-w-3xl mx-auto">
             Integrated solutions across agriculture and renewable energy
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {areas.map((area, index) => (
             <Link
               key={index}
@@ -69,9 +69,9 @@ export function BusinessAreasCards() {
               className="group h-full"
             >
               <div
-                className={`h-full p-8 rounded-xl bg-gradient-to-br ${area.color} border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer`}
+                className={`h-full p-10 rounded-2xl bg-gradient-to-br ${area.color} border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer`}
               >
-                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                <div className="relative h-64 mb-6 rounded-xl overflow-hidden">
                   <OptimizedImage
                     src={area.image}
                     alt={area.title}
@@ -79,15 +79,15 @@ export function BusinessAreasCards() {
                   />
                 </div>
 
-                <h3 className="text-lg font-semibold text-foreground mb-3">
+                <h3 className="text-2xl font-semibold text-foreground mb-4">
                   {area.title}
                 </h3>
 
-                <p className="text-sm text-foreground/70 mb-6 leading-relaxed">
+                <p className="text-base text-foreground/70 mb-8 leading-relaxed">
                   {area.description}
                 </p>
 
-                <div className="flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-primary font-medium text-base group-hover:gap-3 transition-all">
                   Learn More
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -96,10 +96,10 @@ export function BusinessAreasCards() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+                <div className="text-center mt-16">
           <Link
             href="/business-areas"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-colors group"
+            className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-xl text-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-colors group"
           >
             Explore All Business Areas
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

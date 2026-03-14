@@ -14,8 +14,8 @@ export function PartnersCarousel() {
   const duplicatedPartners = [...partners, ...partners];
 
   return (
-    <section className="py-20 bg-foreground text-background overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-32 bg-foreground text-background overflow-hidden">
+      <div className="w-full mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
             Our Partners
